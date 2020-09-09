@@ -419,3 +419,163 @@
   }
 }
 // end tutorial
+// start footer
+.footer {
+  background-color: $bg;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 80px;
+  }
+}
+
+.footer__copy {
+  border-top: 1px solid #424d53;
+  padding: 25px 0;
+}
+
+.footer__copy-text {
+  text-align: center;
+  font-size: 15px;
+  color: #919699;
+}
+
+.footer__col {
+  max-width: 270px;
+  width: 100%;
+  &-menu {
+    max-width: 220px;
+  }
+  &-title {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
+  &-text {
+    color: #b7c3c8;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__info {
+  margin-top: 18px;
+  color: #fff;
+  @include f500;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: '\f041';
+    font-family: 'icomoon';
+    color: $green;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.footer__info-phone {
+  &::before {
+    content: '\f095';
+  }
+}
+
+.footer__col-list {
+  a {
+    margin-bottom: 13px;
+    color: #b7c3c8;
+    padding-left: 22px;
+    position: relative;
+    &::before {
+      content: '\f105';
+      font-family: 'icomoon';
+      position: absolute;
+      font-size: 18px;
+      color: $green;
+      left: 0;
+    }
+  }
+}
+.footer__social-link {
+  margin-bottom: 33px;
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 3px;
+    }
+  }
+  a {
+    width: 28px;
+    height: 28px;
+    background-image: url("../images/socials/css_sprites.png");
+  }
+}
+.link-facebook {
+  background-position: -0 -0;
+}
+.link-twitter {
+  background-position: -84px -0;
+}
+.link-youtube {
+  background-position: -112px -0;
+}
+.link-pinterest {
+  background-position: -56px -0;
+}
+.link-instagram {
+  background-position: -28px -0;
+}
+.footer__form-title {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+.footer__form {
+  position: relative;
+  input {
+    border: none;
+    background-color: #2f3c43;
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    padding-left: 13px;
+    padding-right: 50px;
+    font-size: 14px;
+    &::placeholder {
+      color: #697378;
+    }
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $green;
+    border: none;
+    height: 40px;
+    width: 43px;
+    cursor: pointer;
+    &::before {
+      content: '\f124';
+      font-family: 'icomoon';
+      font-size: 20px;
+      color: #fff;
+      /*top: 10px;
+      left: 14px;*/
+    }
+  }
+}
+
+// end footer
